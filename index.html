@@ -1,0 +1,929 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RKDP MediCare</title>
+    <!-- for arrow sign  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <!-- Google map  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACsttdzuma--8b07wAksCPbg4OGGvr1uw"></script>
+    <!-- loader  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lib.owl.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <section id="full-body">
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <div class="social">
+                        <div>
+                            <!-- <ul class="social-icons">
+                                <a href="">
+                                    <li><img src="icons/facebook.png" alt="facebook" srcset="" class="icon-size"></li>
+                                </a>
+                                <a href="">
+                                    <li><img src="icons/linkedin.png" alt="linkedin" srcset="" class="icon-size"></li>
+                                </a>
+                                <a href="">
+                                    <li><img src="icons/instagram.png" alt="instagram" srcset="" class="icon-size"></li>
+                                </a>
+                                <a href="">
+                                    <li><img src="icons/twitter.png" alt="twitter" srcset="" class="icon-size"></li>
+                                </a>
+                                <a href="mailto:rohitkumarah369@gmail.com">
+                                    <li><img src="icons/mail.png" alt="mail" srcset="" class="icon-size">
+                                        <span> contact@mysite.com</span>
+                                    </li>
+                                </a>
+                            </ul> -->
+                        </div>
+
+                    </div>
+                    <div class="menu-icon">
+                        <!-- <span class="search-sys-mb"><input type="search" id="search-medicine-2" name="search-medicine"
+                                class="form-control search-text" placeholder="Search for meds" autocomplete="off" style="display: inline;
+        " spellcheck="false"></span> -->
+                        <i class="fa fa-bars fa-2x ham"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo.png">
+                    </div>
+                    <div>
+                        <ul class="social-icons update-si">
+                            <li class="search-sys">
+                                <input type="search" id="search-medicine" name="search-medicine"
+                                    class="form-control search-text" placeholder="Search Medicine" autocomplete="off"
+                                    style="display: inline;" spellcheck="false">
+                            </li>
+                            <li><img src="icons/location.png" alt="" srcset="" class="icon-size">
+                                <span>Patna, Bihar</span>
+                            </li>
+                            <!-- <a href="">
+                                <li><img src="icons/search-interface-symbol.png" alt="search" class="icon-size">
+                                </li>
+                            </a>
+                            <a href="">
+                                <li><img src="icons/heart.png" alt="search" class="icon-size"></li>
+                            </a>
+                            <a href="">
+                                <li><img src="icons/user.png" alt="search" class="icon-size"></li>
+                            </a>
+                            <a href="">
+                                <li><span>Log In</span></li>
+                            </a>
+                            <a href="">
+                                <li><span>Sign Up</span></li> -->
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <ul class="navbar-item">
+
+                            <li class="nav-hide nav-home ham-drop">
+                                <div class="dropdown">
+                                    <i class="fa fa-bars fa-2x ham"></i>
+                                    <div class="dropdown-content">
+                                        <a href="#">Health & Medical</a>
+                                        <a href="#">Beauty & Personal Care</a>
+                                        <a href="#">Chemicals</a>
+                                        <a href="#">Tools & Hardware</a>
+                                        <a href="#">Baby Care</a>
+                                        <a href="#">Apparel</a>
+                                        <a href="#">Packaging & Printing</a>
+                                        <a href="#">Sports & Outdoor</a>
+                                        <!-- <a href="#">Hospital Furniture</a>
+                                        <a href="#">Seeds & Saplings</a> -->
+                                        <a href="#">See All Categories <span style="margin-left: 80px;"> ></span> </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#Categories">Category</a></li>
+                            <li><a href="#articles">Products</a></li>
+                            <li><a href="#testim">Testimonials</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm card-cover-12 col-md-12 col-lg-7">
+                            <div class="container-heading">
+                                <div class="heading">
+                                    <h2>Providing Quality Driven</h2>
+                                    <h1>Pharmaceutical Products</h1>
+                                    <!-- <button  class="cta">Email Us</button> -->
+                                    <button class="custom-btn btn-11 cta" id="email-now-cta">Enquiry Now<div
+                                            class="dot"></div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="webCifar-sidebox">
+                    <div id="webCifar">
+                        <h6> <img src="icons/user.png" alt="" srcset=""
+                                style="width:20px;background-color: white;padding: 3px;border-radius: 2px;"> Contact Us
+                        </h6>
+                        <h6>+91-8888888888 </h6>
+                        <h6><img src="icons/mail.png" alt="" srcset=""
+                                style="width:20px; background-color:white;padding: 3px;border-radius: 2px;"> Mail Us
+                        </h6>
+                        <a
+                            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">rkdpmedicare@gmail.com</a>
+                        <div class="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="webCifar-icon">
+                        <a href="https://api.whatsapp.com/send?phone=917488794480&forceIntent=true&load=loadInIOSExternalSafari"
+                            target="_blank"><img src="icons/whatsapp.png" alt="" srcset=""></a>
+                        <img src="images/headphones_1.webp" alt="" srcset="">
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    <!-- popup start contact form start  -->
+    <section class="contact-popup">
+        <div id="email-now-modal" class="popup_modal ">
+            <div class="modal-content-popup">
+                <form class="popup-form" method="post" action="connect1.php">
+                    <span class="pop-close" id="pop-close">&times;</span>
+                    <h2>CONTACT US</h2>
+                    <p type="Name:"><input placeholder="Enter Name" name="name"></input></p>
+                    <p type="Mobile Number:"><input placeholder="Enter Mobile Number" name="email"></input>
+                    </p>
+                    <p type="Message:"><input placeholder="What would you like to tell us.." name="message"></input></p>
+                    <button class="custom-btn btn-11" style="margin-left: 0;" type="submit" value="Send Now">Send Now
+                        <div class="dot">
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- popup start contact form end  -->
+    <!-- loder satrt  -->
+    <section>
+        <style>
+            /* The Loader */
+            #loader-wrapper {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                overflow: hidden;
+                background: #222;
+            }
+
+            .no-js #loader-wrapper {
+                display: none;
+            }
+
+            #loader {
+                display: block;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                width: 150px;
+                height: 150px;
+                margin: -75px 0 0 -75px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #16a085;
+                -webkit-animation: spin 1.7s linear infinite;
+                animation: spin 1.7s linear infinite;
+                z-index: 11;
+            }
+
+            #loader:before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #e74c3c;
+                -webkit-animation: spin-reverse 0.6s linear infinite;
+                animation: spin-reverse 0.6s linear infinite;
+            }
+
+            #loader:after {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #f9c922;
+                -webkit-animation: spin 1s linear infinite;
+                animation: spin 1s linear infinite;
+            }
+
+            @-webkit-keyframes spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @-webkit-keyframes spin-reverse {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(-360deg);
+                }
+            }
+
+            @keyframes spin-reverse {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            .loaded #loader {
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            .loaded #loader-wrapper {
+                visibility: hidden;
+            }
+        </style>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <!-- <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div> -->
+
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                // Fakes the loading setting a timeout
+                setTimeout(function () {
+                    $('body').addClass('loaded');
+                }, 1500);
+
+            });
+        </script>
+    </section>
+    <section class="search" id="search-bar">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <div class="search-item">
+                        <!-- <h3>Found items</h3> -->
+                        <ul id="dino-list" class="list-unstyled">
+                            <li data-img="medicine/crosin1.webp">
+                                <div class="search-card">
+                                    <img src="medicine/crosin1.webp" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Crosin</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/crosin2.webp">
+                                <div class="search-card">
+                                    <img src="medicine/crosin2.webp" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Crosin</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/dolo1.jpg">
+                                <div class="search-card">
+                                    <img src="medicine/dolo1.jpg" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Dolo</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/dolo2.webp">
+                                <div class="search-card">
+                                    <img src="medicine/dolo2.webp" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Dolo 650</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/dolo3.webp">
+                                <div class="search-card">
+                                    <img src="medicine/dolo3.webp" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Dolo 650</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/dolo4.webp">
+                                <div class="search-card">
+                                    <img src="medicine/dolo4.webp" alt="" class="img-fluid" />
+                                    <p>Dolo 650</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/pan1.jpg">
+                                <div class="search-card">
+                                    <img src="medicine/pan1.jpg" alt="" class="img-fluid" />
+                                    <p>Pantop DSR</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/pan2.jpg">
+                                <div class="search-card">
+                                    <img src="medicine/pan2.jpg" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Pantop DSR</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/pan3.jpg">
+                                <div class="search-card">
+                                    <img src="medicine/pan3.jpg" alt="Stegosaurus" class="img-fluid" />
+                                    <p>Pantop DSR</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/v1.jpg">
+                                <div class="search-card">
+                                    <img src="medicine/v1.jpg" alt="" class="img-fluid" />
+                                    <p>Vitamin C</p>
+                                </div>
+                            </li>
+                            <li data-img="">
+                                <div class="search-card">
+                                    <img src="" alt="" class="img-fluid" />
+                                    <p>Vitamin E</p>
+                                </div>
+                            </li>
+                            <li data-img="">
+                                <div class="search-card">
+                                    <img src="" alt="" class="img-fluid" />
+                                    <p>Vitamin A</p>
+                                </div>
+                            </li>
+                            <li data-img="medicine/v2.jpg">
+                                <div class="search-card">
+                                    <img src="medicine/v2.jpg" alt="" class="img-fluid" />
+                                    <p>Vitamin C</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories start  -->
+    <section id="Categories">
+        <h1 class="headbar">Categories
+            <hr>
+        </h1>
+        <div class="d-flex flex-column flex-md-row">
+            <div class="col-sm card-cover">
+                <div class="card custom-card">
+                    <div class="card-cover"
+                        style="background-image: url( images/category/0F100FDE00873EA908F5535CEA_1675249864075.webp );">
+                        <div class="circle-image"
+                            style="background-image: url( images/category/0F100FDE00873EA908F5535CEA_1675249864075.webp );">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Syrups</strong></h5>
+                        <p class="card-text">Sweet, thick liquids for flavoring.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm card-cover">
+                <div class="card custom-card">
+                    <div class="card-cover"
+                        style="background-image: url( images/category/353B8B225130A5B48CF7BCAF14_1675251289795.webp );">
+                        <div class="circle-image"
+                            style="background-image: url( images/category/353B8B225130A5B48CF7BCAF14_1675251289795.webp );">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Tonics</strong></h5>
+                        <p class="card-text">Bitter, carbonated, medicinal, mixer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm card-cover">
+                <div class="card custom-card">
+                    <div class="card-cover"
+                        style="background-image: url( images/category/3D6B1FDC63FF5ED22D5BD03F5F_1675249809105.webp );">
+                        <div class="circle-image"
+                            style="background-image: url( images/category/3D6B1FDC63FF5ED22D5BD03F5F_1675249809105.webp );">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong> Creams
+                            </strong></h5>
+                        <p class="card-text">Thick, smooth, emollient, moisturizing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm card-cover">
+                <div class="card custom-card">
+                    <div class="card-cover"
+                        style="background-image: url( images/category/5C8CB2BFEEF77178E4C90A553E_1675249792752.webp );">
+                        <div class="circle-image"
+                            style="background-image: url( images/category/5C8CB2BFEEF77178E4C90A553E_1675249792752.webp );">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Injectables</strong></h5>
+                        <p class="card-text">Potent, systemic, medication, Antibiotic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm card-cover">
+                <div class="card custom-card">
+                    <div class="card-cover"
+                        style="background-image: url( images/category/C28C5806D0D12019E42A9B90E0_1675250811509.webp );">
+                        <div class="circle-image"
+                            style="background-image: url( images/category/C28C5806D0D12019E42A9B90E0_1675250811509.webp );">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Eye And Ear Drops</strong></h5>
+                        <p class="card-text">Topical medications for bacterial infections.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories end  -->
+    <!-- product starts -->
+    <section class="pt-5  " id="articles">
+        <div class="container">
+            <h1 class="headbar">Products
+                <hr>
+            </h1>
+            <div class="row">
+
+                <div class="loop owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/2A211FA28BA094EDAD95834372_1524055938468.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/50E203D9BBE0E3E6E406881755_1524055718834.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/pantoprazole-20mg-122306749-vx4xq.webp" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/similasan-kids-ear-relief-drops-122306677-opow8.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/torex-cough-syrup-100-ml-122306653-2pgnq.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+                                    <!-- <a href="https://wazirx.com/blog/the-climate-controversy-around-nfts/">
+                                    <p class="mt-5 mb-0"><span class="card-arrow float-end">&#8594;</span></p>
+                                </a> -->
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/2A211FA28BA094EDAD95834372_1524055938468.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/50E203D9BBE0E3E6E406881755_1524055718834.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
+                                    <!-- <a href="https://wazirx.com/blog/taking-crypto-to-the-masses/">
+                                    <p class="mt-5 mb-0"><span class="card-arrow float-end">&#8594;</span></p>
+                                </a> -->
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/products/pantoprazole-20mg-122306749-vx4xq.webp" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur. </h5>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product end -->
+    <!-- start about -->
+    <section id="about" class="about">
+        <div class="aboutus">
+            <div class="left">
+                <img src="images/about2.png">
+            </div>
+            <div class="right">
+                <h1 class="headbar">About Us
+                    <hr>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur. <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit
+                    anim id est laborum.Excepteur sint occaecat cupidatat non proident.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end about -->
+
+
+    <!-- start testimonials  -->
+    <section id="testim" class="testim">
+
+        <div class="wrap">
+            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+            <ul id="testim-dots" class="dots">
+                <li class="dot active"></li>
+                <!--
+                            -->
+                <li class="dot"></li>
+                <!--
+                            -->
+                <li class="dot"></li>
+                <!--
+                            -->
+                <li class="dot"></li>
+                <!--
+                            -->
+                <li class="dot"></li>
+            </ul>
+            <h1 class="headbar">Testimonials
+                <hr>
+            </h1>
+            <div id="testim-content" class="cont">
+
+                <div class="active">
+                    <div class="img">
+                        <img src="images/4.jpg" alt="" srcset="">
+                    </div>
+                    <h2>Ms. Radha Gupta</h2>
+                    <p><span class="comma">"</span>I have been using this medicine for the past few months, and I must
+                        say I am extremely satisfied with the results. It
+                        has helped me manage my condition and live a better life.<span class="comma">"</span></p>
+                </div>
+
+                <div>
+                    <div class="img">
+                        <img src="images/1.jpg" alt="" srcset="">
+                    </div>
+                    <h2>Mr. Ramesh Patel</h2>
+                    <p><span class="comma">"</span>I was hesitant to try a new medicine, but after seeing the positive
+                        reviews, I decided to give it a shot. I'm glad I
+                        did because it has truly made a difference in my health.<span class="comma">"</span>
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img">
+                        <img src="images/2.jpg" alt="" srcset="">
+                    </div>
+                    <h2>Mr. Satish Sharma</h2>
+                    <p><span class="comma">"</span>This medicine has exceeded my expectations in every way. Not only is
+                        it effective, but it also has minimal side
+                        effects, making it the perfect choice for me.<span class="comma">"</span>
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img">
+                        <img src="images/3.jpg" alt="" srcset="">
+                    </div>
+                    <h2>Mr. Sanjay Verma</h2>
+                    <p><span class="comma">"</span>I have tried countless medications for my condition, but none have
+                        worked as well as this one. I am so grateful to have
+                        finally found something that truly works.<span class="comma">"</span>
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img">
+                        <img src="images/5.jpg" alt="" srcset="">
+                    </div>
+                    <h2>Ms. Rohini Sinha</h2>
+                    <p> <span class="comma">"</span>I highly recommend this medicine to anyone who is struggling with
+                        their health. It has made a world of difference for
+                        me, and I'm sure it can do the same for others. <span class="comma">"</span></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- end testimonials  -->
+
+    <!-- gallery start  -->
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h1 class="headbar">Gallery
+                <hr>
+            </h1>
+
+            <div class="gal-wrapper">
+                <div class="media">
+                    <img src="images/gal1.jpg" alt="" />
+                </div>
+                <div class="media">
+                    <img src="images/gal2.jpg" alt="" />
+                </div>
+                <div class="media">
+                    <img src="images/gal3.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery end  -->
+    <section class="contact-page-sec" id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="headbar">Get In Touch
+                    <hr>
+                </h1>
+
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-map-marked"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h2>address</h2>
+                                <span>Opp: BOI ATM, Sandalpur More, Bazar Samiti </span>
+                                <span>Patna-800006, Bihar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h2>E-mail</h2>
+                                <span><a
+                                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">rkdpmedicare@gmail.com</a></span>
+                                <span><a
+                                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">Ravi@rkdpmedicare.com</a></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h2>office time</h2>
+                                <span>Mon - Thu 10:00 am - 7.00 pm</span>
+                                <span>Thu - Sat 10.00 am - 5.00 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-page-form" method="post">
+                        <form action="connect.php" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="single-input-field">
+                                        <input type="text" placeholder="Your Name" name="name" id="form-name" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-input-field">
+                                        <input type="email" placeholder="E-mail" name="email" required
+                                            id="form-gmail-id" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-input-field">
+                                        <input type="text" placeholder="Phone Number" name="phone" id="form-number" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 message-input">
+                                    <div class="single-input-field">
+                                        <textarea placeholder="Write Your Message" name="message"
+                                            style="min-height: 130px;" spellcheck="tr
+                                            " id="form-msg"></textarea>
+                                    </div>
+                                </div>
+                                <div class="single-input-fieldsbtn" style="text-align: right;">
+                                    <button class="custom-btn btn-11" type="submit" style="margin-right: 0;"
+                                        value="Send Now">Send Now
+                                        <div class="dot"></div>
+                                    </button>
+                                    <!-- <input type="submit" value="Send Now" /> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-page-map">
+                        <div class="map">
+                            <div class="map__inner">
+                                <div id="js-map" class="map__canvas"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- full screen google map start -->
+    <!-- <section class="google-map">
+        <div class="container" style="margin: 0;max-width: 100%;padding: 0;">
+            <div class="row" style="position: relative;">
+                <div class="col-md-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912911311!2d76.69348873658222!3d30.73506264436677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1553497921355"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- full screen google map start -->
+
+
+    <!-- footer start  -->
+    <section class="footer-part" style="background-color: #075d9f;">
+        <section class="contact-area" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="contact-content text-center">
+                            <a href="#"><img src="images/logo.png" alt="logo"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Quis ipsum </p>
+                            <div class="hr"></div>
+                            <h6>Opp: BOI ATM, Sandalpur More, Bazar Samiti, Patna-800006, Bihar</h6>
+                            <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
+                            <div class="contact-social">
+                                <ul>
+                                    <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
+                                    <!-- <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============== Contact Area End ====================-->
+        <!-- =============== Footer Area Start ====================-->
+        <footer>
+            <p>Copyright &copy; 2023 <img src="images/logo.png" alt="logo"> All Rights Reserved.
+            </p>
+        </footer>
+    </section>
+    <!-- footer end  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- for search  -->
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <!-- main js file  -->
+    <script src="javascript/app.js" type="text/javascript"> </script>
+    <!-- for carsoul -->
+    <script src="javascript/js.owl.js" type="text/javascript"> </script>
+</body>
+
+</html>
